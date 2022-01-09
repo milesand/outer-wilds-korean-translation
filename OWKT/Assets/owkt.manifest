@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 4272049718
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 93eb7f986d066037369bc2fcd5dc31b8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8f12b76202920f01795af330476ee562
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Fonts/NanumBarunGothic.otf
+- Assets/Fonts/NanumBarunGothicBold_Dynamic.otf
+- Assets/Fonts/D2Coding_Dynamic.ttf
+- Assets/Fonts/NanumBarunGothic_Dynamic.otf
+- Assets/Fonts/D2Coding.ttf
+- Assets/Translation.txt
+- Assets/Fonts/NanumBarunGothicBold.otf
+Dependencies: []
