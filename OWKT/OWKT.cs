@@ -324,9 +324,9 @@ namespace OWKT
         }
 
         private static bool ItemToolUpdateState(
-            int newState,
+            ItemTool.PromptState newState,
             string itemName,
-            ref int ____promptState,
+            ref ItemTool.PromptState ____promptState,
             ref ScreenPrompt ____messageOnlyPrompt,
             ref ScreenPrompt ____cancelButtonPrompt,
             ref ScreenPrompt ____interactButtonPrompt)
@@ -345,30 +345,30 @@ namespace OWKT
             string empty = string.Empty;
             switch (____promptState)
             {
-                case 1:
+                case ItemTool.PromptState.PICK_UP:
                     text2 = itemName + UITextLibrary.GetString(UITextType.ItemPickUpPrompt);
                     break;
-                case 2:
+                case ItemTool.PromptState.DROP:
                     text2 = itemName + UITextLibrary.GetString(UITextType.ItemDropPrompt);
                     break;
-                case 3:
+                case ItemTool.PromptState.UNSOCKET:
                     text2 = itemName + UITextLibrary.GetString(UITextType.ItemRemovePrompt);
                     break;
-                case 4:
+                case ItemTool.PromptState.SOCKET:
                     text2 = itemName + UITextLibrary.GetString(UITextType.ItemInsertPrompt);
                     break;
-                case 5:
+                case ItemTool.PromptState.WRONG_SOCKET_TYPE:
                     string iga = EndsWithFinalConsonant(itemName) ? "이" : "가";
-                    text = itemName + UITextLibrary.GetString(UITextType.ItemAlreadyHoldingPrompt).Replace("<I/Ga>", iga);
+                    text = itemName + UITextLibrary.GetString(UITextType.ItemNotFitPrompt).Replace("<I/Ga>", iga);
                     break;
-                case 6:
+                case ItemTool.PromptState.CANNOT_HOLD_MORE:
                     string ulrul = EndsWithFinalConsonant(itemName) ? "을" : "를";
                     text = UITextLibrary.GetString(UITextType.ItemAlreadyHoldingPrompt).Replace("<Item>", itemName).Replace("<Ul/Rul>", ulrul);
                     break;
-                case 8:
+                case ItemTool.PromptState.GIVE:
                     text2 = itemName + " " + UITextLibrary.GetString(UITextType.GivePrompt);
                     break;
-                case 9:
+                case ItemTool.PromptState.TAKE:
                     text2 = itemName + " " + UITextLibrary.GetString(UITextType.TakePrompt);
                     break;
                 default:
