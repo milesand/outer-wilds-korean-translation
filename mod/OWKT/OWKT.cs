@@ -1,4 +1,5 @@
-﻿using OWML.ModHelper;
+﻿using HarmonyLib;
+using OWML.ModHelper;
 using System;
 using System.Reflection;
 using System.Xml;
@@ -9,90 +10,54 @@ namespace OWKT
 {
     public class OWKT : ModBehaviour
     {
-        static OWKT self;
+        // singleton OWKT instance.
+        public static OWKT Instance;
 
-        private AssetBundle bundle;
-        public AssetBundle Bundle
+        public readonly Lazy<AssetBundle> Bundle = new Lazy<AssetBundle>(() =>
         {
-            get
-            {
-                if (bundle == null)
-                {
-                    bundle = ModHelper.Assets.LoadBundle("Assets/owkt");
-                }
-                return bundle;
-            }
-        }
+            return Instance.ModHelper.Assets.LoadBundle("assets/owkt");
+        });
 
-        private Font nanumBarunGothic;
-        public Font NanumBarunGothic
+        // NanumBarunGothic Font(not monospace) that has been loaded, static and dynamic.
+        public readonly Lazy<Font> NanumBarunGothic = new Lazy<Font>(() =>
         {
-            get
-            {
-                if (nanumBarunGothic == null)
-                {
-                    nanumBarunGothic = Bundle.LoadAsset<Font>("Assets/Fonts/NanumBarunGothic.otf");
-                }
-                return nanumBarunGothic;
-            }
-        }
-
-        private Font nanumBarunGothicDyn;
-        public Font NanumBarunGothicDyn
+            return Instance.Bundle.Value.LoadAsset<Font>("Assets/Fonts/NanumBarunGothic.otf");
+        });
+        public readonly Lazy<Font> NanumBarunGothicDyn = new Lazy<Font>(() =>
         {
-            get
-            {
-                if (nanumBarunGothicDyn == null)
-                {
-                    nanumBarunGothicDyn = Bundle.LoadAsset<Font>("Assets/Fonts/NanumBarunGothic_Dynamic.otf");
-                }
-                return nanumBarunGothicDyn;
-            }
-        }
+            return Instance.Bundle.Value.LoadAsset<Font>("Assets/Fonts/NanumBarunGothic_Dynamic.otf");
+        });
 
-        private Font d2Coding;
-        public Font D2Coding
+        // D2Coding Font(monospace) that has been loaded, static and dynamic.
+        public readonly Lazy<Font> D2Coding = new Lazy<Font>(() =>
         {
-            get
-            {
-                if (d2Coding == null)
-                {
-                    d2Coding = Bundle.LoadAsset<Font>("Assets/Fonts/D2Coding.ttf");
-                }
-                return d2Coding;
-            }
-        }
-
-        private Font d2CodingDyn;
-        public Font D2CodingDyn
+            return Instance.Bundle.Value.LoadAsset<Font>("Assets/Fonts/D2Coding.ttf");
+        });
+        public readonly Lazy<Font> D2CodingDyn = new Lazy<Font>(() =>
         {
-            get
-            {
-                if (d2CodingDyn == null)
-                {
-                    d2CodingDyn = Bundle.LoadAsset<Font>("Assets/Fonts/D2Coding_Dynamic.ttf");
-                }
-                return d2CodingDyn;
-            }
-        }
+            return Instance.Bundle.Value.LoadAsset<Font>("Assets/Fonts/D2Coding_Dynamic.ttf");
+        });
 
-        private void Start()
+        public void Awake()
         {
-            self = this;
-            ModHelper.HarmonyHelper.AddPrefix<TextTranslation>("SetLanguage", typeof(OWKT), nameof(OWKT.SetLanguage));
-            ModHelper.HarmonyHelper.AddPrefix<TextTranslation>("_Translate", typeof(OWKT), nameof(OWKT._Translate));
-            ModHelper.HarmonyHelper.AddPrefix<TextTranslation>("_Translate_ShipLog", typeof(OWKT), nameof(OWKT._Translate_ShipLog));
-            ModHelper.HarmonyHelper.AddPrefix<TextTranslation>("_Translate_UI", typeof(OWKT), nameof(OWKT._Translate_UI));
-            ModHelper.HarmonyHelper.AddPrefix<TextTranslation>("GetFont", typeof(OWKT), nameof(OWKT.GetFont));
-            ModHelper.HarmonyHelper.AddPrefix<NomaiTranslatorProp>("InitializeFont", typeof(OWKT), nameof(OWKT.InitTranslatorFont));
-            ModHelper.HarmonyHelper.AddPrefix<UIStyleManager>("GetShipLogFont", typeof(OWKT), nameof(OWKT.GetShipLogFont));
-            ModHelper.HarmonyHelper.AddPostfix<GameOverController>("SetupGameOverScreen", typeof(OWKT), nameof(OWKT.SetGameOverScreenFont));
-            ModHelper.HarmonyHelper.AddPostfix<HUDCanvas>("Start", typeof(OWKT), nameof(OWKT.FormatNotif));
-            ModHelper.HarmonyHelper.AddPrefix<ItemTool>("UpdateState", typeof(OWKT), nameof(OWKT.ItemToolUpdateState));
-            MethodInfo setPromptText = typeof(SingleInteractionVolume).GetMethod("SetPromptText", new Type[] { typeof(UITextType), typeof(string) });
-            ModHelper.HarmonyHelper.AddPrefix(setPromptText, typeof(OWKT), nameof(OWKT.SetPromptTextCharacter));
+            Instance = this;
+            Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
         }
+    }
 
+    [HarmonyPatch]
+    public class Patch
+    {
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation.SetLanguage))]
+        // Hijack SetLanguage to load mod's translation asset instead.
+        //
+        // This would be a lot cleaner if I could just replace the asset itself, or correctly patch Resources.Load<TextAsset>,
+        // But apparently I can do neither due to former functionality being unavailable in OWML, and the latter because it seems
+        // pretty much impossible to just select Resources.Load<TextAsset> without selecting Resources.Load or
+        // every instance of Resources.Load<T> and what not.
+        //
+        // Also, this works, so I'm just leaving this be.
         private static bool SetLanguage(
             TextTranslation.Language lang,
             TextTranslation __instance,
@@ -106,7 +71,7 @@ namespace OWKT
 
             ___m_language = lang;
             ___m_table = null;
-            TextAsset textAsset = self.Bundle.LoadAsset<TextAsset>("Assets/Translation.txt");
+            TextAsset textAsset = OWKT.Instance.Bundle.Value.LoadAsset<TextAsset>("Assets/Translation.txt");
             if (null == textAsset)
             {
                 Debug.LogError("Unable to load text translation file for language " + TextTranslation.s_langFolder[(int)___m_language]);
@@ -143,9 +108,10 @@ namespace OWKT
             return false;
         }
 
-        private static bool _Translate(
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation._Translate))]
+        public static bool Translate(
             string key,
-            TextTranslation __instance,
             ref string __result,
             TextTranslation.Language ___m_language,
             TextTranslation.TranslationTable ___m_table)
@@ -154,6 +120,7 @@ namespace OWKT
             {
                 return true;
             }
+
             if (___m_table == null)
             {
                 Debug.LogError("TextTranslation not initialized");
@@ -168,13 +135,19 @@ namespace OWKT
                 return false;
             }
             text = text.Replace("\\\\n", "\n");
+            // In the base game, OW replaces spaces(U+0020) in text to U+3000 here when the language is set to Korean,
+            // which doesn't make much sense, given that basic space character is prevalent in Korean, and U+3000 is not.
+            // Also U+3000 is supposed look like a full-width space, but that's not how it looks in-game, it just looks like a regular space.
+            // Also if it actually looked like a full-width space in-game, it would look *ugly*.
+            // Therefore, we're just skipping that conversion entirely.
             __result = text;
             return false;
         }
 
-        private static bool _Translate_ShipLog(
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation._Translate_ShipLog))]
+        public static bool Translate_ShipLog(
             string key,
-            TextTranslation __instance,
             ref string __result,
             TextTranslation.Language ___m_language,
             TextTranslation.TranslationTable ___m_table)
@@ -183,6 +156,7 @@ namespace OWKT
             {
                 return true;
             }
+
             if (___m_table == null)
             {
                 Debug.LogError("TextTranslation not initialized");
@@ -197,13 +171,15 @@ namespace OWKT
                 return false;
             }
             text = text.Replace("\\\\n", "\n");
+            // Something about space and U+3000. See comment in Translate method.
             __result = text;
             return false;
         }
 
-        private static bool _Translate_UI(
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation._Translate_UI))]
+        public static bool Translate_UI(
             int key,
-            TextTranslation __instance,
             ref string __result,
             TextTranslation.Language ___m_language,
             TextTranslation.TranslationTable ___m_table)
@@ -212,6 +188,7 @@ namespace OWKT
             {
                 return true;
             }
+
             if (___m_table == null)
             {
                 Debug.LogError("TextTranslation not initialized");
@@ -232,11 +209,16 @@ namespace OWKT
                 return false;
             }
             text = text.Replace("\\\\n", "\n");
+            // Something about space and U+3000. See comment in Translate method.
             __result = text;
             return false;
         }
 
-        private static bool GetFont(
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation.GetFont))]
+        // Korean font included in base game lacks some glyphs.
+        // This patch hijacks font loading to load a font with all required glyphs instead.
+        public static bool GetFont(
             bool dynamicFont,
             ref Font __result)
         {
@@ -247,16 +229,21 @@ namespace OWKT
 
             if (dynamicFont)
             {
-                __result = OWKT.self.NanumBarunGothicDyn;
+                __result = OWKT.Instance.NanumBarunGothicDyn.Value;
             }
             else
             {
-                __result = OWKT.self.NanumBarunGothic;
+                __result = OWKT.Instance.NanumBarunGothic.Value;
             }
             return false;
         }
 
-        private static bool InitTranslatorFont(
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(NomaiTranslatorProp), nameof(NomaiTranslatorProp.InitializeFont))]
+        // Make Translator use D2Coding instead of NanumBarunGothic.
+        // While not strictly necessary, this fixes an issue with a certain easter egg that depends on translator font
+        // being monospace to be correctly displayed.
+        public static bool InitTranslatorFont(
             ref Font ____fontInUse,
             ref Font ____dynamicFontInUse,
             ref float ____fontSpacingInUse,
@@ -267,45 +254,62 @@ namespace OWKT
                 return true;
             }
 
-            ____fontInUse = OWKT.self.D2Coding;
-            ____dynamicFontInUse = OWKT.self.D2CodingDyn;
+            ____fontInUse = OWKT.Instance.D2Coding.Value;
+            ____dynamicFontInUse = OWKT.Instance.D2CodingDyn.Value;
             ____fontSpacingInUse = TextTranslation.GetDefaultFontSpacing();
             ____textField.font = ____fontInUse;
             ____textField.lineSpacing = ____fontSpacingInUse;
             return false;
         }
 
-        private static bool GetShipLogFont(ref Font __result)
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(UIStyleManager), nameof(UIStyleManager.GetShipLogFont))]
+        // Make Ship log use D2Coding font.
+        public static bool GetShipLogFont(ref Font __result)
         {
             if (TextTranslation.Get().GetLanguage() != TextTranslation.Language.KOREAN)
             {
                 return true;
             }
 
-            __result = OWKT.self.D2Coding;
+            __result = OWKT.Instance.D2Coding.Value;
             return false;
         }
-        private static bool GetShipLogCardFont(ref Font __result)
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(UIStyleManager), nameof(UIStyleManager.GetShipLogCardFont))]
+        // Make Ship log card use D2Coding font.
+        public static bool GetShipLogCardFont(ref Font __result)
         {
             if (TextTranslation.Get().GetLanguage() != TextTranslation.Language.KOREAN)
             {
                 return true;
             }
 
-            __result = OWKT.self.D2Coding;
+            __result = OWKT.Instance.D2Coding.Value;
             return false;
         }
 
-        private static void SetGameOverScreenFont(ref Text ____deathText)
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(GameOverController), nameof(GameOverController.SetupGameOverScreen))]
+        // In base game there's a bug where game uses default font for gameover text.
+        // Latin messages are displayed just fine, but anything else that requires glyphs not included in said font
+        // will display broken messages. This is also true for Korean, so this fixes that.
+        public static void SetGameOverScreenFont(ref Text ____deathText)
         {
             ____deathText.font = TextTranslation.GetFont(false);
         }
 
-        private static void FormatNotif(
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(HUDCanvas), nameof(HUDCanvas.Start))]
+        // Some notification include extra data, and the way base game formats it doesn't look quite nice in Korean.
+        // This patch fixex that.
+        public static void FormatNotif(
             ref NotificationData ____lowFuelNotif,
             ref NotificationData ____critOxygenNotif,
             ref NotificationData ____lowOxygenNotif,
             PlayerResources ____playerResources)
+
         {
             if (TextTranslation.Get().GetLanguage() == TextTranslation.Language.KOREAN)
             {
@@ -315,14 +319,21 @@ namespace OWKT
             }
         }
 
-        private static bool EndsWithFinalConsonant(string word)
+        // Check whether the last letter of given word is Korean, and if it is, whether it has a final consonant(batchim; 받침).
+        // returns true if it ends with a Korean letter with final consonant, false otherwise.
+        public static bool EndsWithFinalConsonant(string word)
         {
             if (word.Length == 0) { return false; }
-            int n = (int)word[word.Length - 1];
-            return 0xac00 <= n && n < 0xd7a4 && n % 28 != 16;
+            char codepoint = word[word.Length - 1];
+            const int FINAL_CONSONANT_CYCLE_LEN = 28;
+            return '가' <= codepoint && codepoint <= '힣' // Korean range check
+                && ((int)codepoint % FINAL_CONSONANT_CYCLE_LEN != (int)'가' % FINAL_CONSONANT_CYCLE_LEN); // Final consonant check
 
         }
 
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(ItemTool), nameof(ItemTool.UpdateState))]
+        // Again, this patch changes base game prompt formatting for Korean so that it looks nice.
         private static bool ItemToolUpdateState(
             ItemTool.PromptState newState,
             string itemName,
@@ -335,6 +346,7 @@ namespace OWKT
             {
                 return true;
             }
+
             if (____promptState == newState)
             {
                 return false;
@@ -404,6 +416,9 @@ namespace OWKT
             return false;
         }
 
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(SingleInteractionVolume), nameof(SingleInteractionVolume.SetPromptText), new Type[] { typeof(UITextType), typeof(string) })]
+        // Yet another text format fix, this time for talking with people.
         private static bool SetPromptTextCharacter(
             UITextType promptID,
             string _characterName,
@@ -420,6 +435,5 @@ namespace OWKT
             ____noCommandIconPrompt.SetText(_characterName + prompt);
             return false;
         }
-
     }
 }
