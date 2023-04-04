@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 69478aa1cc50e3740972e0e5fcace25f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 48
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: D2Coding
+  fontNames:
+  - D2Coding
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: owkt
+  assetBundleVariant: 
