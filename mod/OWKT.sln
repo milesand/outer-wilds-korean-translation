@@ -1,25 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.3.32901.215
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWKT", "OWKT\OWKT.csproj", "{8BE65537-EECB-4B19-AEEA-00B12BA60DB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWKT", "OWKT\OWKT.csproj", "{4288965A-A75B-4A54-8B12-79B881435BA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8BE65537-EECB-4B19-AEEA-00B12BA60DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BE65537-EECB-4B19-AEEA-00B12BA60DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8BE65537-EECB-4B19-AEEA-00B12BA60DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8BE65537-EECB-4B19-AEEA-00B12BA60DB5}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F5E1B9D2-01F1-4188-9EF5-C59A7560B0DD}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4288965A-A75B-4A54-8B12-79B881435BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4288965A-A75B-4A54-8B12-79B881435BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4288965A-A75B-4A54-8B12-79B881435BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4288965A-A75B-4A54-8B12-79B881435BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
