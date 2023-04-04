@@ -24,7 +24,4 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="OWKT.csproj.user" />
-  </ItemGroup>
 </Project>

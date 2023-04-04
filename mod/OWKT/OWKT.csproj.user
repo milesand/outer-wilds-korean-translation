@@ -1,5 +1,0 @@
-﻿<Project>
-  <PropertyGroup>
-    <OutputPath>$(AppData)\OuterWildsModManager\OWML\Mods\milesand.OWKT</OutputPath>
-  </PropertyGroup>
-</Project>
