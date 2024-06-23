@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using OWML.ModHelper;
+using OWML.Common;
 using System;
 using System.Reflection;
 using System.Xml;
@@ -109,107 +110,42 @@ namespace OWKT
         }
 
         [HarmonyPrefix]
-        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation._Translate))]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation.ProcessCustomWhitespace))]
         public static bool Translate(
-            string key,
+            string inputString,
+            TextTranslation __instance,
             ref string __result,
-            TextTranslation.Language ___m_language,
-            TextTranslation.TranslationTable ___m_table)
+            bool ___m_ignoreManualLineBreaks)
         {
-            if (___m_language != TextTranslation.Language.KOREAN)
+            if (__instance.GetLanguage() != TextTranslation.Language.KOREAN)
             {
                 return true;
             }
 
-            if (___m_table == null)
+            string text;
+            if (__instance.m_ignoreManualLineBreaks)
             {
-                Debug.LogError("TextTranslation not initialized");
-                __result = key;
-                return false;
+                text = inputString.Replace("\\\\N\\\\n", " ");
+                text = text.Replace("\\\\n\\\\N", " ");
+                text = text.Replace("\\\\n", " ");
+                text = text.Replace("\\\\N", " ");
             }
-            string text = ___m_table.Get(key);
-            if (text == null)
+            else if (PlayerData.IsUILargeTextSize())
             {
-                Debug.LogError("String \"" + key + "\" not found in table for language " + TextTranslation.s_langFolder[(int)___m_language]);
-                __result = key;
-                return false;
+                text = inputString.Replace("\\\\N\\\\n", "\n");
+                text = text.Replace("\\\\n\\\\N", "\n");
+                text = text.Replace("\\\\N", "\n");
+                text = text.Replace("\\\\n", " ");
             }
-            text = text.Replace("\\\\n", "\n");
-            // In the base game, OW replaces spaces(U+0020) in text to U+3000 here when the language is set to Korean,
-            // which doesn't make much sense, given that basic space character is prevalent in Korean, and U+3000 is not.
-            // Also U+3000 is supposed look like a full-width space, but that's not how it looks in-game, it just looks like a regular space.
-            // Also if it actually looked like a full-width space in-game, it would look *ugly*.
-            // Therefore, we're just skipping that conversion entirely.
-            __result = text;
-            return false;
-        }
-
-        [HarmonyPrefix]
-        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation._Translate_ShipLog))]
-        public static bool Translate_ShipLog(
-            string key,
-            ref string __result,
-            TextTranslation.Language ___m_language,
-            TextTranslation.TranslationTable ___m_table)
-        {
-            if (___m_language != TextTranslation.Language.KOREAN)
+            else
             {
-                return true;
+                text = inputString.Replace("\\\\N\\\\n", "\n");
+                text = text.Replace("\\\\n\\\\N", "\n");
+                text = text.Replace("\\\\n", "\n");
+                text = text.Replace("\\\\N", " ");
             }
-
-            if (___m_table == null)
-            {
-                Debug.LogError("TextTranslation not initialized");
-                __result = key;
-                return false;
-            }
-            string text = ___m_table.GetShipLog(key);
-            if (text == null)
-            {
-                Debug.LogError("String \"" + key + "\" not found in ShipLog table for language " + TextTranslation.s_langFolder[(int)___m_language]);
-                __result = key;
-                return false;
-            }
-            text = text.Replace("\\\\n", "\n");
-            // Something about space and U+3000. See comment in Translate method.
-            __result = text;
-            return false;
-        }
-
-        [HarmonyPrefix]
-        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation._Translate_UI))]
-        public static bool Translate_UI(
-            int key,
-            ref string __result,
-            TextTranslation.Language ___m_language,
-            TextTranslation.TranslationTable ___m_table)
-        {
-            if (___m_language != TextTranslation.Language.KOREAN)
-            {
-                return true;
-            }
-
-            if (___m_table == null)
-            {
-                Debug.LogError("TextTranslation not initialized");
-                __result = key.ToString();
-                return false;
-            }
-            string text = ___m_table.Get_UI(key);
-            if (text == null)
-            {
-                Debug.LogWarning(string.Concat(new object[]
-                {
-                    "UI String #",
-                    key,
-                    " not found in table for language ",
-                    TextTranslation.s_langFolder[(int)___m_language]
-                }));
-                __result = key.ToString();
-                return false;
-            }
-            text = text.Replace("\\\\n", "\n");
-            // Something about space and U+3000. See comment in Translate method.
+            // Base game replaces all spaces with two spaces here if korean. Why?
+            // Used to be U+3000 in previous versions.
             __result = text;
             return false;
         }
@@ -235,6 +171,19 @@ namespace OWKT
             {
                 __result = OWKT.Instance.NanumBarunGothic.Value;
             }
+            return false;
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation.GetFont))]
+        public static bool GetGameOverFont(ref Font __result)
+        {
+            if (TextTranslation.Get().GetLanguage() != TextTranslation.Language.KOREAN)
+            {
+                return true;
+            }
+
+            __result = OWKT.Instance.NanumBarunGothicDyn.Value;
             return false;
         }
 
@@ -291,19 +240,9 @@ namespace OWKT
         }
 
         [HarmonyPostfix]
-        [HarmonyPatch(typeof(GameOverController), nameof(GameOverController.SetupGameOverScreen))]
-        // In base game there's a bug where game uses default font for gameover text.
-        // Latin messages are displayed just fine, but anything else that requires glyphs not included in said font
-        // will display broken messages. This is also true for Korean, so this fixes that.
-        public static void SetGameOverScreenFont(ref Text ____deathText)
-        {
-            ____deathText.font = TextTranslation.GetFont(false);
-        }
-
-        [HarmonyPostfix]
         [HarmonyPatch(typeof(HUDCanvas), nameof(HUDCanvas.Start))]
         // Some notification include extra data, and the way base game formats it doesn't look quite nice in Korean.
-        // This patch fixex that.
+        // This patch fixes that.
         public static void FormatNotif(
             ref NotificationData ____lowFuelNotif,
             ref NotificationData ____critOxygenNotif,
@@ -317,6 +256,17 @@ namespace OWKT
                 ____critOxygenNotif = new NotificationData(NotificationTarget.Player, UITextLibrary.GetString(UITextType.NotificationO2Sec).Replace("<Sec>", Mathf.RoundToInt(____playerResources.GetCriticalOxygenInSeconds()).ToString()), 3f, true);
                 ____lowOxygenNotif = new NotificationData(NotificationTarget.Player, UITextLibrary.GetString(UITextType.NotificationO2Min).Replace("<Min>", Mathf.RoundToInt(____playerResources.GetLowOxygenInSeconds() / 60f).ToString()), 3f, true);
             }
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(HUDCanvas), nameof(HUDCanvas.DoResizeAction))]
+        public static void FormatNotif2(
+            ref NotificationData ____lowFuelNotif,
+            ref NotificationData ____critOxygenNotif,
+            ref NotificationData ____lowOxygenNotif,
+            PlayerResources ____playerResources)
+        {
+            FormatNotif(ref ____lowFuelNotif, ref ____critOxygenNotif, ref ____lowOxygenNotif, ____playerResources);
         }
 
         // Check whether the last letter of given word is Korean, and if it is, whether it has a final consonant(batchim; 받침).

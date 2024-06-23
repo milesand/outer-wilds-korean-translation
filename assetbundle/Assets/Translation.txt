@@ -1442,7 +1442,7 @@
   </entry>
   <entry>
     <key>should be deadYeah! That feels like ages ago.\\n\\nWe'd have died that first time out if the time loop didn't exist, though. Isn't that weird to think about?</key>
-    <value>그래! 수백 년 전 일 같아.\\n\\n타임 루프가 없었다면, 그때 죽고 말았을거야. 그렇게 생각하면 이상하지 않아?</value>
+    <value>그래! 수백 년 전 일 같아.\\n\\N\\n\\N타임 루프가 없었다면, 그때 죽고 말았을거야. 그렇게 생각하면 이상하지 않아?</value>
   </entry>
   <entry>
     <key>Selfshould be deadWeirder than there being two of us now?</key>
@@ -1466,7 +1466,7 @@
   </entry>
   <entry>
     <key>sun stationYES. I can’t believe no one was around to see that.\\n\\nWe’re probably the best pilot in the space program by now.</key>
-    <value>&lt;i&gt;그러니까&lt;/i&gt;. 그걸 아무도 못봤다니 믿을 수가 없군.\\n\\n지금 우린 이 우주 프로그램 최고의 조종사일거야.</value>
+    <value>&lt;i&gt;그러니까&lt;/i&gt;. 그걸 아무도 못봤다니 믿을 수가 없군.\\n\\N\\n\\N지금 우린 이 우주 프로그램 최고의 조종사일거야.</value>
   </entry>
   <entry>
     <key>Selfsun stationYeah, but we’ve also died more than anyone else.</key>
@@ -1603,7 +1603,7 @@
   <entry>
     <key>&lt;color=orange&gt;Black Hole Forge&lt;/color&gt;\\n(north 40m)
 		</key>
-    <value>&lt;color=orange&gt;블랙홀 제련소&lt;/color&gt;\\n(북쪽 40m)</value>
+    <value>&lt;color=orange&gt;블랙홀 제련소&lt;/color&gt;\\n\\N(북쪽 40m)</value>
   </entry>
   <entry>
     <key>PYE: The &lt;color=orange&gt;Ash Twin Project&lt;/color&gt; will be one of our biggest undertakings (metaphorically &lt;i&gt;and&lt;/i&gt; physically). To build it, we need a way to travel quickly between &lt;color=lightblue&gt;Ash Twin&lt;/color&gt; and each location that holds crucial project materials.</key>
@@ -1733,11 +1733,11 @@
   </entry>
   <entry>
     <key>&lt;color=lightblue&gt;Ash Twin&lt;/color&gt; warp network status: &lt;color=orange&gt;Sun tower&lt;/color&gt; offline as of &lt;MinutesSinceRedGiant&gt; minutes &lt;SecondsSinceRedGiant&gt; seconds ago.\\nAll other towers online.</key>
-    <value>&lt;color=lightblue&gt;재 쌍둥이&lt;/color&gt; 워프 네트워크 상태: &lt;color=orange&gt;태양 탑&lt;/color&gt; &lt;MinutesSinceRedGiant&gt;분 &lt;SecondsSinceRedGiant&gt;초 전부터 오프라인. 다른 모든 탑 온라인.</value>
+    <value>&lt;color=lightblue&gt;재 쌍둥이&lt;/color&gt; 워프 네트워크 상태: &lt;color=orange&gt;태양 탑&lt;/color&gt; &lt;MinutesSinceRedGiant&gt;분 &lt;SecondsSinceRedGiant&gt;초 전부터 오프라인.\\n\\N다른 모든 탑 온라인.</value>
   </entry>
   <entry>
     <key>Sun tower offline as of &lt;MinutesSinceRedGiant&gt; minutes &lt;SecondsSinceRedGiant&gt; seconds ago.\\nAll other towers online.</key>
-    <value>&lt;color=orange&gt;태양 탑&lt;/color&gt; &lt;MinutesSinceRedGiant&gt;분 &lt;SecondsSinceRedGiant&gt;초 전부터 오프라인. 다른 모든 탑 온라인.</value>
+    <value>&lt;color=orange&gt;태양 탑&lt;/color&gt; &lt;MinutesSinceRedGiant&gt;분 &lt;SecondsSinceRedGiant&gt;초 전부터 오프라인.\\n\\N다른 모든 탑 온라인.</value>
   </entry>
   <entry>
     <key>POKE: Welcome to the &lt;color=orange&gt;White Hole Station&lt;/color&gt;! If you fell through the black hole by accident (don't worry, you aren’t the first), this warp tower can return you to &lt;color=lightblue&gt;Brittle Hollow&lt;/color&gt;.</key>
@@ -2617,7 +2617,7 @@
   </entry>
   <entry>
     <key>SignSincerest apologies, except to Slate and Mica,\\n\\nHornfels (museum curator)</key>
-    <value>슬레이트와 미카를 제외한 여러분들께 사과의 말씀을 올립니다.\\n\\n혼펠스 (박물관 큐레이터)</value>
+    <value>슬레이트와 미카를 제외한 여러분들께 사과의 말씀을 올립니다.\\n\\N\\n\\N혼펠스 (박물관 큐레이터)</value>
   </entry>
   <entry>
     <key>SignThe radio tower here on Timber Hearth was built to receive transmissions from our deep space satellite, and to this day still houses the first-ever photos taken of the entire solar system.</key>
@@ -2785,7 +2785,7 @@
   </entry>
   <entry>
     <key>ScientistAnswer221Well, it’s all very conceptual, but basically, it’s like taking a regular second-stage booster and strapping a bigger rocket onto it. \\nIsn’t that &lt;i&gt;great&lt;/i&gt;?</key>
-    <value>뭐, 개념적인 거긴 한데, 대충 말하자면, 평범한 2단 부스터에 더 커다란 로켓을 붙이는거랑 비슷한거지. \\n&lt;i&gt;대단&lt;/i&gt;하지 않아?</value>
+    <value>뭐, 개념적인 거긴 한데, 대충 말하자면, 평범한 2단 부스터에 더 커다란 로켓을 붙이는거랑 비슷한거지. \\n\\N&lt;i&gt;대단&lt;/i&gt;하지 않아?</value>
   </entry>
   <entry>
     <key>ScientistAnswer222Probably!</key>
@@ -2793,7 +2793,7 @@
   </entry>
   <entry>
     <key>ScientistAnswer23Oh, it’s a perfect ten. Unless you’re factoring in pilot error, in which case it’s about a four.\\nNo offense.</key>
-    <value>아, 10점 만점이야. 조종사 실수를 빼면. 실수를 고려하면 4점 정도?\\n악의는 없어.</value>
+    <value />
   </entry>
   <entry>
     <key>Scientist3Oh, hold up, you’re going to want to get the launch codes from the observatory first.</key>
@@ -2837,7 +2837,7 @@
   </entry>
   <entry>
     <key>Scientist4Looks like you’re ready for takeoff! The excitement of a launch is fun and all, but I can’t wait to get back to working on the new ship.\\nWe’re working on fixing the autopilot’s avoidance system for this one!</key>
-    <value>이륙할 준비가 된 것 같군! 발사도 즐겁지만, 난 새 우주선 작업으로 돌아가고 싶어서 견딜 수가 없어.\\n다음 거엔 자동 운항기의 회피 시스템이 수리되어 들어갈거야!</value>
+    <value>이륙할 준비가 된 것 같군! 발사도 즐겁지만, 난 새 우주선 작업으로 돌아가고 싶어서 견딜 수가 없어.\\n\\N다음 거엔 자동 운항기의 회피 시스템이 수리되어 들어갈거야!</value>
   </entry>
   <entry>
     <key>Scientist4...Uh, sorry.</key>
@@ -3513,7 +3513,7 @@
   </entry>
   <entry>
     <key>SignDespite my checking on them at least a thousand times over, the images are STILL not ready to print over in the radio tower. Well, it’s like they say — a watched satellite never transmits data! &lt;size=20&gt;(Haha, that’s a little joke for you, journal. No one says that.)&lt;/size&gt;</key>
-    <value>통신탑을 최소 천 번은 확인했는데, &lt;i&gt;아직도&lt;/i&gt; 이미지가 프린트될 기미가 안보인다. 뭐 옛 말에 그러지 않았는가, 위성은 보고 있으면 데이터를 송신하지 않는다고! &lt;size=20&gt;(하하, 농담이야, 일지야. 그런 말은 없어.)&lt;/size&gt;</value>
+    <value>통신탑을 최소 천 번은 확인했는데, &lt;i&gt;아직도&lt;/i&gt; 이미지가 프린트될 기미가 안보인다. 뭐 옛 말에 그러지 않았는가, 위성은 보고 있으면 데이터를 송신하지 않는다고! &lt;SmallText&gt;(하하, 농담이야, 일지야. 그런 말은 없어.)&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>SignSomeday, I’ll have to study the mechanics of how time manages to slow to a syrupy crawl whenever I’m anticipating something. In the meantime, I’ve turned to Gabbro, our resident expert in leisurely whiling away the hours, who recommends the following:</key>
@@ -3521,7 +3521,7 @@
   </entry>
   <entry>
     <key>SignGABBRO’S 3 FOOLPROOF STEPS FOR DOZING OFF\\n     1.     Light a nice, cozy campfire and get comfortable.\\n     2.     Gaze deeply into the serene warmth.\\n     3.     Let time begin to slip away as you allow the flames to lull you into a peaceful slumber.</key>
-    <value>가브로의 바보도 할 수 있는 3단계 낮잠 방법\\n     1.     따뜻하고 아늑한 모닥불을 피우고 편히 앉는다.\\n     2.     모닥불의 평온한 온기를 깊이 응시한다.\\n     3.     불꽃을 따라 평화로운 단잠에 빠져, 시간이 흘러가도록 둔다.</value>
+    <value>가브로의 바보도 할 수 있는 3단계 낮잠 방법\\n\\N     1.     따뜻하고 아늑한 모닥불을 피우고 편히 앉는다.\\n\\N     2.     모닥불의 평온한 온기를 깊이 응시한다.\\n\\N     3.     불꽃을 따라 평화로운 단잠에 빠져\\N&lt;LargeUi&gt;            &lt;/LargeUi&gt;\\n&lt;RegularUi&gt;             &lt;/RegularUi&gt;시간이 흘러가도록 둔다.</value>
   </entry>
   <entry>
     <key>Sign(If Gabbro knew I’d taken notes, they’d probably think I’d finally cracked, but I refuse to accept sass from an astronaut who deliberately burns their marshmallows.)</key>
@@ -3992,7 +3992,7 @@
   </entry>
   <entry>
     <key>
-			Melorae: If you’ve come here to look for Coleus, this is where we were when he vanished. He’s been missing for two days now!
+			MELORAE: If you’ve come here to look for Coleus, this is where we were when he vanished. He’s been missing for two days now!
 		</key>
     <value>
 			멜로레: 콜레우스를 찾으러 왔다면, 여기가 콜레우스가 사라진 곳입니다. 사라진 지 이틀이나 지났어요!
@@ -4000,7 +4000,7 @@
   </entry>
   <entry>
     <key>
-			Annona: Your strange, wandering rock friend is here, though Coleus isn’t.
+			ANNONA: Your strange, wandering rock friend is here, though Coleus isn’t.
 		</key>
     <value>
 			아노나: 이상한 방랑자 바위 친구는 여기에 있지만, 콜레우스는 없군요.
@@ -4008,7 +4008,7 @@
   </entry>
   <entry>
     <key>
-			Melorae: Coleus and I observed this unusual-looking rock shard (and several smaller rocks) in at least two other caverns. I’m unsure if this is relevant.
+			MELORAE: Coleus and I observed this unusual-looking rock shard (and several smaller rocks) in at least two other caverns. I’m unsure if this is relevant.
 		</key>
     <value>
 			멜로레: 콜레우스와 저는 이 이상하게 생긴 바위(와 더 작은 바위 몇 개)를 적어도 두 곳의 다른 동굴에서 본 적 있습니다. 이게 중요한지는 모르겠네요.
@@ -4024,7 +4024,7 @@
   </entry>
   <entry>
     <key>
-			Melorae: We were examining the different rocks. I recall Coleus standing on the largest one (the wandering rock). I was taking notes, and then my lantern died.
+			MELORAE: We were examining the different rocks. I recall Coleus standing on the largest one (the wandering rock). I was taking notes, and then my lantern died.
 		</key>
     <value>
 			멜로레: 저희는 다른 바위들을 조사하고 있었어요. 콜레우스가 가장 커다란 바위(방랑자 바위) 위에 서 있었던게 기억나네요. 메모를 하고 있는데, 랜턴의 불이 꺼졌어요.
@@ -4032,7 +4032,7 @@
   </entry>
   <entry>
     <key>
-			Melorae: When I lit it again, Coleus and the rock were both gone.
+			MELORAE: When I lit it again, Coleus and the rock were both gone.
 		</key>
     <value>
 			멜로레: 불을 다시 켰을 때는 콜레우스와 바위 모두 사라져 있었어요.
@@ -5560,9 +5560,7 @@
 		</value>
   </entry>
   <entry>
-    <key>
-			Melorae: Coleus is missing! He vanished from the &lt;color=orange&gt;Lakebed Cave&lt;/color&gt; (the one at the bottom of the dry lakebed at the north pole) several days ago, and we’re unable to find any trace of him. I don’t know how much air he had when he disappeared. I beg any friend reading this, help us recover Coleus!
-		</key>
+    <key>MELORAE: Coleus is missing! He vanished from the &lt;color=orange&gt;Lakebed Cave&lt;/color&gt; (the one at the bottom of the dry lakebed at the north pole) several days ago, and we’re unable to find any trace of him. I don’t know how much air he had when he disappeared. I beg any friend reading this, help us recover Coleus!</key>
     <value>
 			멜로레: 콜레우스가 사라졌어요! 콜레우스는 며칠 전 &lt;color=orange&gt;호수 바닥 동굴&lt;/color&gt;(북극점의 말라붙은 호수 바닥 밑에 있는 동굴)에서 사라졌고, 아무 흔적도 찾을 수가 없어요. 사라졌을 때 공기를 얼마나 가지고 있었는지도 모르겠어요. 이 글을 읽고 있는 모든 분들께 부탁드립니다. 콜레우스를 찾는 걸 도와주세요!
 		</value>
@@ -5939,7 +5937,7 @@
 		    Approximate time until &lt;color=orange&gt;Sun Station&lt;/color&gt; is destroyed by expanding star: &lt;RemainingMinutes&gt; MINUTES, &lt;RemainingSeconds&gt; SECONDS\\nApproximate time until star’s death: &lt;MinutesToRedGiant&gt; MINUTES, &lt;SecondsToRedGiant&gt; SECONDS
 		</key>
     <value>
-		    &lt;color=orange&gt;태양 정거장&lt;/color&gt;이 별의 팽창으로 인해 파괴될 때까지 남은 시간: 약 &lt;RemainingMinutes&gt; 분 &lt;RemainingSeconds&gt; 초\\n별의 죽음까지 남은 시간: 약 &lt;MinutesToRedGiant&gt; 분 &lt;SecondsToRedGiant&gt; 초
+		    &lt;color=orange&gt;태양 정거장&lt;/color&gt;이 별의 팽창으로 인해 파괴될 때까지 남은 시간: 약 &lt;RemainingMinutes&gt; 분 &lt;RemainingSeconds&gt; 초\\n\\N별의 죽음까지 남은 시간: 약 &lt;MinutesToRedGiant&gt;분 &lt;SecondsToRedGiant&gt;초
 		</value>
   </entry>
   <entry>
@@ -6196,7 +6194,7 @@
   </entry>
   <entry>
     <key>FeldsparJournal1Trip 4, entry # whatever \\n Crashes: 2 \\n Boring crashes: 0 (remember to see Slate when I get back)</key>
-    <value>탐험 4, 기록 # 뭐시기 \\n 불시착: 2 \\n 재미없는 불시착: 0 (돌아가서 잊지 말고 슬레이트 보기)</value>
+    <value>탐험 4, 기록 # 뭐시기 \\n\\N 불시착: 2 \\n\\N 재미없는 불시착: 0 (돌아가서 잊지 말고 슬레이트 보기)</value>
   </entry>
   <entry>
     <key>FeldsparJournal1Ha &lt;i&gt;ha&lt;/i&gt;, yeah! &lt;i&gt;Yeah&lt;/i&gt;! All the way down to the core! Consider yourself conquered, Giant’s Deep — you just got &lt;i&gt;Feldsparred&lt;/i&gt;.</key>
@@ -6220,7 +6218,7 @@
   </entry>
   <entry>
     <key>SignMoving through &lt;color=orange&gt;ghost matter&lt;/color&gt; is uniquely painful and will probably kill you. Don’t complain to me if you hurt yourself fooling around.\\n- Hornfels</key>
-    <value>&lt;color=orange&gt;유령 물질&lt;/color&gt;을 건드리면 매우 아프며, 오래 건드리면 아마 죽을겁니다. 장난치다가 다쳐도 저한테 뭐라고 하지 마세요.\\n 혼펠스</value>
+    <value>&lt;color=orange&gt;유령 물질&lt;/color&gt;을 건드리면 매우 아프며, 오래 건드리면 아마 죽을겁니다. 장난치다가 다쳐도 저한테 뭐라고 하지 마세요.\\n\\N- 혼펠스</value>
   </entry>
   <entry>
     <key>Gneiss</key>
@@ -6464,7 +6462,7 @@
   </entry>
   <entry>
     <key>SignHey! Come say hi to your old flight coach before your launch. I’ve got zero-g training set up if you want a refresher.\\n\\n-Gossan</key>
-    <value>안녕! 출발 전에 비행코치한테 인사나 하고 가. 연습이 필요하면 무중력 동굴을 준비해뒀어.\\n\\n-고산</value>
+    <value>안녕! 출발 전에 비행코치한테 인사나 하고 가. 연습이 필요하면 무중력 동굴을 준비해뒀어.\\n\\N\\n\\N-고산</value>
   </entry>
   <entry>
     <key>Friend1Hey, hey! So did you get a good look at that Nomai statue?</key>
@@ -6780,7 +6778,7 @@
   </entry>
   <entry>
     <key>Riebeck_AttlerockRecordingYep. Just gonna get back in the ol’ ship and take off. Totally safe... Mostly safe. &lt;size=20&gt;Oh, stars above&lt;/size&gt;...</key>
-    <value>좋아요. 그냥 우주선을 타고 이륙하기만 하면 돼요. 안전할거에요... 거의. &lt;size=20&gt;아, 별들이시여&lt;/size&gt;...</value>
+    <value>좋아요. 그냥 우주선을 타고 이륙하기만 하면 돼요. 안전할거에요... 거의. &lt;SmallText&gt;아, 별들이시여&lt;/SmallText&gt;...</value>
   </entry>
   <entry>
     <key>RiebecksJournalThe journey here from the south pole has been, um... I’m going to go with “harrowing”, because of the, um, all of the meteors. But hey, at least I made it here unconcussed and not on fire!</key>
@@ -7624,39 +7622,39 @@
   </entry>
   <entry>
     <key>ShyKid1&lt;size=20&gt;...&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;...&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>ShyKid2&lt;size=20&gt;...&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;...&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>ShyKid2&lt;size=20&gt;Good luck in space.&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;행운을 빌어요.&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;행운을 빌어요.&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>ShyKid3&lt;size=20&gt;...&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;...&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>FoundYou&lt;size=20&gt;...&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;...&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>FoundYou&lt;size=20&gt;You found me...&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;들켰다...&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;들켰다...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>LastKidFound&lt;size=20&gt;...I won? I’m happy...&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;...제가 이겼어요? 신난다...&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;...제가 이겼어요? 신난다...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>LastKidFound&lt;size=20&gt;Thanks... for playing with us.&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;고마워요... 같이 놀아줘서.&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;고마워요... 놀아줘서.&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>AlreadyFoundYou&lt;size=20&gt;...&lt;/size&gt;</key>
-    <value>&lt;size=20&gt;...&lt;/size&gt;</value>
+    <value>&lt;SmallText&gt;...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>SignThis crystal was taken from a Nomai ruin on Brittle Hollow.</key>
@@ -7860,7 +7858,7 @@
   </entry>
   <entry>
     <key>Questions</key>
-    <value></value>
+    <value />
   </entry>
   <entry>
     <key>RiebeckQuestionsI learned something!</key>
@@ -7892,11 +7890,11 @@
   </entry>
   <entry>
     <key>RiebeckArcheologistIf you have any questions about the Brittle Hollow Nomai, I’m your Hearthian! Or, um... I have some knowledge of them, I mean. So. &lt;size=20&gt;Maybe I can help?&lt;/size&gt;</key>
-    <value>조각난 공동의 노마이에 대해 질문이 있으면, 저한테 물어보세요! 아니, 어... 알고 있는게 좀 있거든요. 그러니까. &lt;size=20&gt;도움이 되지 않을까요?&lt;/size&gt;</value>
+    <value>조각난 공동의 노마이에 대해 질문이 있으면, 저한테 물어보세요! 아니, 어... 제가 이것저것 좀 알거든요. 그러니까. &lt;SmallText&gt;아마 도움이 되지 않을까요?&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>RiebeckExploreOh wow, where &lt;i&gt;shouldn’t&lt;/i&gt; you explore here?&lt;Pause&gt; Um, not the &lt;size=20&gt;black hole&lt;/size&gt;, actually. That’s... very no.</key>
-    <value>세상에, 여기서 탐험하면 &lt;i&gt;안되는&lt;/i&gt; 곳이 있을까요?&lt;Pause&gt; 음, 당연히 &lt;size=20&gt;블랙홀&lt;/size&gt;은 안되죠. 저긴... 안돼요.</value>
+    <value>세상에, 여기에 탐험하면 &lt;i&gt;안되는&lt;/i&gt; 곳이 있을까요?&lt;Pause&gt; 음, 당연히 &lt;SmallText&gt;블랙홀&lt;/SmallText&gt;은 안되죠. 저긴... 안돼요.</value>
   </entry>
   <entry>
     <key>RiebeckExploreWhich is unfortunate, because uh, the most exciting stuff is all below the crust. Including the &lt;color=orange&gt;Hanging City&lt;/color&gt; — that’s just to the north. You can kinda see it from here.</key>
@@ -7908,7 +7906,7 @@
   </entry>
   <entry>
     <key>RiebeckExploreGood luck with exploring. Um, if you learn anything about the Nomai, I’d love to hear it, &lt;size=20&gt;if it’s not too much trouble?&lt;/size&gt;</key>
-    <value>탐험에 행운을 빌어요. 어, 노마이에 대해 뭔가 새로 알게 된다면, 저한테도 들려주지 않겠어요? &lt;size=20&gt;시간이 된다면?&lt;/size&gt;</value>
+    <value>탐험에 행운을 빌어요. 어, 노마이에 대해 뭔가 새로 알게 된다면, 저한테도 들려주지 않겠어요? &lt;SmallText&gt;시간이 된다면?&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>RiebeckLearnedOh, cool! &lt;Pause/&gt;Um, what is it?</key>
@@ -8000,7 +7998,7 @@
   </entry>
   <entry>
     <key>RiebeckLearned_4Why they chose to build their most advanced settlement so close to a &lt;i&gt;you-know-what&lt;/i&gt; is beyond me. Maybe that kind of thing makes sense to a Nomai, though. ...Maybe they needed the &lt;size=20&gt;black hole&lt;/size&gt; for something?</key>
-    <value>왜 가장 발전된 거주지를 &lt;i&gt;저거&lt;/i&gt; 근처에 지었는지 저는 잘 모르겠어요. 노마이한테는 말이 되는 일인지도 모르지만, ...혹시 &lt;size=20&gt;블랙홀&lt;/size&gt;을 어디에 썼던게 아닐까요?</value>
+    <value>왜 가장 발전된 거주지를 &lt;i&gt;저거&lt;/i&gt; 근처에 지었는진 잘 모르겠어요. 노마이한테는 말이 되는 일인지도 모르지만, ...혹시 &lt;SmallText&gt;블랙홀&lt;/SmallText&gt;을 어디에 썼던게 아닐까요?</value>
   </entry>
   <entry>
     <key>RiebeckLearned_5You mean there’s another Nomai city &lt;i&gt;inside&lt;/i&gt; of Ember Twin? That’s incredible! A whole city, and I had no idea it existed! This is great!</key>
@@ -8008,7 +8006,7 @@
   </entry>
   <entry>
     <key>RiebeckLearned_5How did they keep the sand out? If it were me, I’d be nervous about getting buried in the caves by that awful river of sand. Gosh, the Nomai sure were ingenius, building an entire settlement underground. The Sunless City! ...Wow!</key>
-    <value>모래는 어떻게 막았죠? 저라면, 그 끔찍한 모래에 파묻히는게 무서웠을 거에요. 세상에, 노마이는 정말 독창적이군요. 지하에 도시 하나를 통째로 세우다니! 태양 없는 도시! ...와!</value>
+    <value>모래는 어떻게 막았죠? 저라면, 그 끔찍한 모래에 파묻히는게 무서웠을 거에요. 세상에, 노마이는 정말 독창적이었군요. 지하에 도시를 하나 통째로 세우다니! 태양 없는 도시! ...와!</value>
   </entry>
   <entry>
     <key>RiebeckLearned_5That means there were two groups of Nomai — one that lived on Ember Twin, and one that lived here on Brittle Hollow. But they must have traveled around the solar system, since Nomai writing can be found on other planets, too.</key>
@@ -8076,7 +8074,7 @@
   </entry>
   <entry>
     <key>RiebeckLearned_8Okay, yeah, that’s... that’s not so bad. &lt;Pause&gt;&lt;size=20&gt;That’s probably doable...&lt;/size&gt;</key>
-    <value>좋아요, 그건... 그렇게 나쁘지 않네요. &lt;Pause&gt;&lt;size=20&gt;아마 할 수 있을거에요...&lt;/size&gt;</value>
+    <value>좋아요, 그건... 그렇게 나쁘지 않네요. &lt;Pause&gt;&lt;SmallText&gt;아마 할 수 있을거에요...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>SignThis piece of Nomai writing was essential to deciphering their unique language.</key>
@@ -8233,7 +8231,7 @@
 			The &lt;color=orange&gt;Crossroads&lt;/color&gt;\\n(west 350m)
 		</key>
     <value>
-			&lt;color=orange&gt;교차로&lt;/color&gt;\\n(서쪽 350m)
+			&lt;color=orange&gt;교차로&lt;/color&gt;\\n\\N(서쪽 350m)
 		</value>
   </entry>
   <entry>
@@ -8241,19 +8239,19 @@
 			The &lt;color=orange&gt;Southern Observatory&lt;/color&gt;\\n(south 550m)
 		</key>
     <value>
-			&lt;color=orange&gt;남쪽 천문대&lt;/color&gt;\\n(남쪽 550m)
+			&lt;color=orange&gt;남쪽 천문대&lt;/color&gt;\\n\\N(남쪽 550m)
 		</value>
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Gravity Crystal Workshop&lt;/color&gt;\\n(above 140m)
 		</key>
-    <value>&lt;color=orange&gt;중력 수정 작업장&lt;/color&gt;\\n(위 140m)
+    <value>&lt;color=orange&gt;중력 수정 작업장&lt;/color&gt;\\n\\N(위 140m)
 		</value>
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Gravity Cannon&lt;/color&gt;\\n(east 400m)
 		</key>
-    <value>&lt;color=orange&gt;중력 대포&lt;/color&gt;\\n(동쪽 400m)
+    <value>&lt;color=orange&gt;중력 대포&lt;/color&gt;\\n\\N(동쪽 400m)
 		</value>
   </entry>
   <entry>
@@ -8261,7 +8259,7 @@
 			The &lt;color=orange&gt;Hanging City&lt;/color&gt;\\n(north 250m)
 		</key>
     <value>
-			&lt;color=orange&gt;매달린 도시&lt;/color&gt;\\n(북쪽 250m)
+			&lt;color=orange&gt;매달린 도시&lt;/color&gt;\\n\\N(북쪽 250m)
 		</value>
   </entry>
   <entry>
@@ -8269,13 +8267,13 @@
 			The &lt;color=orange&gt;Tower of Quantum Knowledge&lt;/color&gt;\\n(west 190m)
 		</key>
     <value>
-			&lt;color=orange&gt;양자 지식의 탑&lt;/color&gt;\\n(서쪽 190m)
+			&lt;color=orange&gt;양자 지식의 탑&lt;/color&gt;\\n\\N(서쪽 190m)
 		</value>
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Lower Crossroads&lt;/color&gt;\\n(below 56m)
 		</key>
-    <value>&lt;color=orange&gt;하부 교차로&lt;/color&gt;\\n(아래 56m)
+    <value>&lt;color=orange&gt;하부 교차로&lt;/color&gt;\\n\\N(아래 56m)
 		</value>
   </entry>
   <entry>
@@ -8283,7 +8281,7 @@
 			The &lt;color=orange&gt;Hanging City&lt;/color&gt;\\n(below 50m)
 		</key>
     <value>
-			&lt;color=orange&gt;매달린 도시&lt;/color&gt;\\n(아래 50m)
+			&lt;color=orange&gt;매달린 도시&lt;/color&gt;\\n\\N(아래 50m)
 		</value>
   </entry>
   <entry>
@@ -8297,14 +8295,15 @@
   <entry>
     <key>&lt;color=orange&gt;Black Hole Forge&lt;/color&gt;\\n(left 30m)
 		</key>
-    <value>&lt;color=orange&gt;블랙홀 제련소&lt;/color&gt;\\n(왼쪽 30m)</value>
+    <value>&lt;color=orange&gt;블랙홀 제련소&lt;/color&gt;\\n\\N(왼쪽 30m)
+		</value>
   </entry>
   <entry>
     <key>
 			The &lt;color=orange&gt;Crossroads&lt;/color&gt;\\n(east 190m)
 		</key>
     <value>
-			&lt;color=orange&gt;교차로&lt;/color&gt;\\n(동쪽 190m)
+			&lt;color=orange&gt;교차로&lt;/color&gt;\\n\\N(동쪽 190m)
 		</value>
   </entry>
   <entry>
@@ -8313,14 +8312,15 @@
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Gravity Cannon&lt;/color&gt; Controls\\n(90m)</key>
-    <value>&lt;color=orange&gt;중력 대포&lt;/color&gt; 제러 장치\\n(90m)</value>
+    <value>&lt;color=orange&gt;중력 대포&lt;/color&gt; 제어 장치\\n\\N(90m)
+		</value>
   </entry>
   <entry>
     <key>
 			Entrance to the &lt;color=orange&gt;Tower of Quantum Knowledge&lt;/color&gt;\\n(below 90m)
 		</key>
     <value>
-			&lt;color=orange&gt;양자 지식의 탑&lt;/color&gt; 입구\\n(아래 90m)
+			&lt;color=orange&gt;양자 지식의 탑&lt;/color&gt; 입구\\n\\N(아래 90m)
 		</value>
   </entry>
   <entry>
@@ -8388,13 +8388,13 @@
 			The &lt;color=orange&gt;Sunless City&lt;/color&gt;\\n(110m)
 		</key>
     <value>
-			&lt;color=orange&gt;태양 없는 도시&lt;/color&gt;\\n(120m)
+			&lt;color=orange&gt;태양 없는 도시&lt;/color&gt;\\n\\N(120m)
 		</value>
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Gravity Cannon&lt;/color&gt;\\n(120m)
 		</key>
-    <value>&lt;color=orange&gt;중력 대포&lt;/color&gt;\\n(120m)
+    <value>&lt;color=orange&gt;중력 대포&lt;/color&gt;\\n\\N(120m)
 		</value>
   </entry>
   <entry>
@@ -8402,19 +8402,19 @@
 			The &lt;color=orange&gt;High Energy Lab&lt;/color&gt;\\n(400m)
 		</key>
     <value>
-			&lt;color=orange&gt;고에너지 실험실&lt;/color&gt;\\n(400m)
+			&lt;color=orange&gt;고에너지 실험실&lt;/color&gt;\\n\\N(400m)
 		</value>
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Anglerfish Fossil Overlook&lt;/color&gt;\\n(40m)
 		</key>
-    <value>&lt;color=orange&gt;아귀 화석 전망대&lt;/color&gt;\\n(40m)
+    <value>&lt;color=orange&gt;아귀 화석 전망대&lt;/color&gt;\\n\\N(40m)
 		</value>
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Stepping Stone Cave&lt;/color&gt;\\n(20m)
 		</key>
-    <value>&lt;color=orange&gt;징검돌 동굴&lt;/color&gt;\\n(20m)
+    <value>&lt;color=orange&gt;징검돌 동굴&lt;/color&gt;\\n\\N(20m)
 		</value>
   </entry>
   <entry>
@@ -8422,13 +8422,13 @@
 			The &lt;color=orange&gt;Sunless City&lt;/color&gt;\\n(120m)
 		</key>
     <value>
-			&lt;color=orange&gt;태양 없는 도시&lt;/color&gt;\\n(120m)
+			&lt;color=orange&gt;태양 없는 도시&lt;/color&gt;\\n\\N(120m)
 		</value>
   </entry>
   <entry>
     <key>&lt;color=orange&gt;Crash Site Caves&lt;/color&gt;\\n(60m)
 		</key>
-    <value>&lt;color=orange&gt;충돌 지점 동굴&lt;/color&gt;\\n(60m)
+    <value>&lt;color=orange&gt;충돌 지점 동굴&lt;/color&gt;\\n\\N(60m)
 		</value>
   </entry>
   <entry>
@@ -8436,7 +8436,7 @@
 			The &lt;color=orange&gt;High Energy Lab&lt;/color&gt;\\n(300m)
 		</key>
     <value>
-			&lt;color=orange&gt;고에너지 실험실&lt;/color&gt;\\n(300m)
+			&lt;color=orange&gt;고에너지 실험실&lt;/color&gt;\\n\\N(300m)
 		</value>
   </entry>
   <entry>
@@ -8444,7 +8444,7 @@
 			The &lt;color=orange&gt;Sunless City&lt;/color&gt;\\n(300m)
 		</key>
     <value>
-			&lt;color=orange&gt;태양 없는 도시&lt;/color&gt;\\n(300m)
+			&lt;color=orange&gt;태양 없는 도시&lt;/color&gt;\\n\\N(300m)
 		</value>
   </entry>
   <entry>
@@ -8746,7 +8746,7 @@
 			MASKS RECEIVING DATA FROM:\\n&lt;color=orange&gt;Probe Tracking Module&lt;/color&gt;\\n&lt;color=lightblue&gt;Giant’s Deep&lt;/color&gt; memory statue\\n&lt;color=lightblue&gt;Timber Hearth&lt;/color&gt; memory statue
 		</key>
     <value>
-			데이터 수신 중:\\n&lt;color=orange&gt;탐사정 추적 모듈&lt;/color&gt;\\n&lt;color=lightblue&gt;거인의 심연&lt;/color&gt; 기억 조각상\\n&lt;color=lightblue&gt;목재 화로&lt;/color&gt; 기억 조각상
+			데이터 수신 중:\\n\\N&lt;color=orange&gt;탐사정 추적 모듈&lt;/color&gt;\\n\\N&lt;color=lightblue&gt;거인의 심연&lt;/color&gt; 기억 조각상\\n\\N&lt;color=lightblue&gt;목재 화로&lt;/color&gt; 기억 조각상
 		</value>
   </entry>
   <entry>
@@ -9467,7 +9467,7 @@
   </entry>
   <entry>
     <key>LonelyAnd when ground control forgets I’m up here &lt;size=20&gt;and they usually do&lt;/size&gt;, I launch my Little Scout at the village.</key>
-    <value>그리고 지상 관제팀이 &lt;size=20&gt;항상 그렇듯&lt;/size&gt; 내가 여기 있다는 것 잊으면, 마을로 꼬마 정찰기를 보내.</value>
+    <value>그리고 지상 관제팀이 &lt;SmallText&gt;항상 그렇지만&lt;/SmallText&gt; 내가 여기 있단 걸 잊어버리면, 마을로 꼬마 정찰기를 보내.</value>
   </entry>
   <entry>
     <key>EskerLonelyThey forget about you?</key>
@@ -9495,7 +9495,7 @@
   </entry>
   <entry>
     <key>SpyIt’s one-way communication. That none of the villagers know about. &lt;size=20&gt;Because I’ve never told them&lt;/size&gt;.</key>
-    <value>그건 단방향 통신이야. 마을 사람들 아무도 모르는. &lt;size=20&gt;내가 말한 적이 없으니까&lt;/size&gt;.</value>
+    <value>그건 단방향 통신이야. 마을 사람들 아무도 모르는. &lt;SmallText&gt;내가 말한 적이 없거든&lt;/SmallText&gt;.</value>
   </entry>
   <entry>
     <key>MusicProbably. Or actually, definitely. The other travelers carry instruments, so they don’t bother whistling.</key>
@@ -9615,7 +9615,7 @@
   </entry>
   <entry>
     <key>FeldsparJellyfishJournalTrip 4(?), entry #... I’m gonna say “not 1.”  \\n Crashes: 3 \\n Boring crashes: 0 (a personal best!)</key>
-    <value>탐험 4(?), 항목 #... “1 아님”. \\n 불시착: 3 \\n 재미없는 불시착: 0 (개인 최고 기록!)</value>
+    <value>탐험 4(?), 항목 #... “1 아님”. \\n\\N 불시착: 3 \\n\\N 재미없는 불시착: 0 (개인 최고 기록!)</value>
   </entry>
   <entry>
     <key>FeldsparJellyfishJournalWhoa &lt;i&gt;ho&lt;/i&gt;! Never thought I’d see one of these beasties outside of Giant’s Deep! They were awfully useful back there — maybe a jellyfish could be useful here, too?</key>
@@ -10255,7 +10255,7 @@
   </entry>
   <entry>
     <key>CuratorEyesOpenNo, truly, that’s wonderful! It really is. ...Even if I &lt;i&gt;have&lt;/i&gt; been pouring over it every night for weeks. It’s stupendous you were able to get a reaction from the statue just by glancing at it a few times.</key>
-    <value>아니, 진짜로, 대단한 일이야! 진심이야. ...난 몇 주간의 밤을 거기에 쏟아부었는걸. 그 조각상을 몇 번 쳐다본 것만으로 반응을 이끌어냈다니 정말 굉장해.</value>
+    <value>아니, 진짜로, 대단한 일이야! 진심이야. ...난 몇 주 동안 밤마다 그걸 조사했는걸. 그 조각상을 몇 번 쳐다본 것만으로 반응을 이끌어냈다니 정말 굉장해.</value>
   </entry>
   <entry>
     <key>CuratorEyesOpenErgh, sorry, that’s not a very scientific thing to say, is it? I &lt;i&gt;am&lt;/i&gt; glad. I’m just also insufferably, &lt;i&gt;profoundly&lt;/i&gt; jealous. You’ll have to forgive me.</key>
@@ -10419,7 +10419,7 @@
   </entry>
   <entry>
     <key>WaitingForOthersNo rush! Take your time. &lt;size=20&gt;It might not even exist here...&lt;/size&gt;</key>
-    <value>서두를 필요는 없어요! 시간은 많아요. &lt;size=20&gt;그런게 아예 없을 수도 있고요...&lt;/size&gt;</value>
+    <value>서두를 필요는 없어요! 시간은 많아요. &lt;SmallText&gt;여기에 시간이란 게 존재한다면 말이에요...&lt;/SmallText&gt;</value>
   </entry>
   <entry>
     <key>ReadyToPlayShould I begin?</key>
@@ -10523,7 +10523,7 @@
   </entry>
   <entry>
     <key>SignI saw smoke coming from Youngbark Crater up north and figured I should go check it out. You can use the scout launcher, just please don’t break it while I’m gone – Tektite</key>
-    <value>북쪽 어린 나무 크레이터에서 연기가 올라오는 걸 보고 확인해보러 감. 정찰기 발사대를 써도 되지만, 망가뜨리지는 말 것.\\n\\n – 텍타이트</value>
+    <value>북쪽 어린 나무 크레이터에서 연기가 올라오는 걸 보고 확인해보러 감. 정찰기 발사대는 써도 되지만, 망가뜨리지는 말 것.\\n\\N\\n\\N– 텍타이트</value>
   </entry>
   <entry>
     <key>SignBig thanks to these additional founding members of Outer Wilds Ventures, without whom we would never have gotten off the ground:</key>
@@ -10753,6 +10753,10 @@ LOADING...???
   <entry>
     <key>SignHere lies Sean 'Ariamaki' Riedinger</key>
     <value>여기 Sean 'Ariamaki' Riedinger 잠들다</value>
+  </entry>
+  <entry>
+    <key>&lt;color=red&gt;ERROR: Unknown Language&lt;/color&gt;</key>
+    <value />
   </entry>
   <table_shipLog>
     <TranslationTableEntry>
@@ -11565,7 +11569,7 @@ LOADING...???
     </TranslationTableEntry>
     <TranslationTableEntry>
       <key>Symbol RoomThe passage lead to three wooden containers, each marked with a glowing vault seal.</key>
-      <value>통로는 각각 볼트의 빛나는 봉인 하나씩이 표시된  나무 용기 세 개가 있는 곳으로 이어진다.</value>
+      <value>통로는 볼트의 빛나는 봉인이 각각 하나씩 표시된 나무 용기 세 개가 있는 곳으로 이어졌다.</value>
     </TranslationTableEntry>
     <TranslationTableEntry>
       <key>Symbol RoomA secret room filled with wooden containers marked with different symbols.</key>
@@ -12870,6 +12874,10 @@ LOADING...???
       <value>변경 사항을 적용할까요?</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
+      <key>148</key>
+      <value>렌더링 모드</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
       <key>150</key>
       <value>자동 부스트 사용</value>
     </TranslationTableEntryUI>
@@ -12955,7 +12963,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>180</key>
-      <value>이 설정을 유지할까요?\\n</value>
+      <value>이 설정을 유지할까요?\\n\\N</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>181</key>
@@ -13587,7 +13595,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>383</key>
-      <value></value>
+      <value />
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>384</key>
@@ -13659,7 +13667,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>430</key>
-      <value>경고: 연료 고갈됨\\n산소를 추진제로 사용중</value>
+      <value>경고: 연료 고갈됨\\n\\N산소를 추진제로 사용중</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>431</key>
@@ -13815,11 +13823,11 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>487</key>
-      <value>자동 운항 중지됨: 목표와 너무 가까움</value>
+      <value>자동 운항 중지됨:\\N목표와 너무 가까움</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>488</key>
-      <value>자동 운항 완료: 목표에 근접 실패</value>
+      <value>자동 운항 완료:\\N목표에 근접 실패</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>489</key>
@@ -13835,7 +13843,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>502</key>
-      <value>메인 메뉴로 돌아가기\\n\\n(모든 진행 상황을 잃게 됩니다)</value>
+      <value>메인 메뉴로 돌아가기\\n\\N\\n\\N(모든 진행 상황을 잃게 됩니다)</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>503</key>
@@ -13863,11 +13871,11 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>520</key>
-      <value>컨트롤러 연결이 끊겼습니다.\\n컨트롤러를 다시 연결하세요.</value>
+      <value>컨트롤러 연결이 끊겼습니다.\\n\\N컨트롤러를 다시 연결하세요.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>521</key>
-      <value>현재 사용자가 로그아웃했습니다.\\n계속하려면 다시 로그인하세요.</value>
+      <value>현재 사용자가 로그아웃했습니다.\\n\\N계속하려면 다시 로그인하세요.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>522</key>
@@ -13883,11 +13891,11 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>525</key>
-      <value></value>
+      <value>컨트롤러 연결이 끊겼습니다.\\n\\N컨트롤러를 다시 연결하세요.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>526</key>
-      <value></value>
+      <value>무선 컨트롤러 연결이 끊겼습니다.\\n\\N무선 컨트롤러를 다시 연결하세요.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>550</key>
@@ -14379,19 +14387,19 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>812</key>
-      <value>당신은 초신성의 영향에서 벗어나,\\n우주선의 자원이 고갈될 때까지 우주를 떠돕니다</value>
+      <value>당신은 초신성의 영향에서 벗어나,\\n\\N우주선의 자원이 마침내 고갈될 때까지 우주를 떠돕니다</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>813</key>
-      <value>여기에 얼마나 있었을까요? 몇 분? 몇 년?\\n확신할 수 없지만, 당신의 여정은 끝난 듯 합니다.</value>
+      <value>여기에 얼마나 있었을까요? 몇 분? 몇 년?\\n\\N확신할 수 없지만, 당신의 여정은 끝난 듯 합니다.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>814</key>
-      <value>당신은 초신성의 영향에서 벗어나,\\n버려진 행성의 유일한 거주자가 되었음을 깨닫습니다.\\n여기 어딘가에 &lt;i&gt;뭔가&lt;/i&gt; 먹을 만한 게 있지 않을까요?</value>
+      <value>당신은 초신성의 영향에서 벗어나, 버려진 세상의 유일한 거주자가 되었습니다.\\n\\N여기 어디 먹을 만한 게 &lt;i&gt;하나는&lt;/i&gt; 있지 않을까요?</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>815</key>
-      <value>시간이 얼마나 지났을까요?\\n그들은 더이상 굳이 당신을 사냥하려 하지도 않습니다.\\n시간은 흐르고, 흘러, 이전의 삶은 반쯤 잊혀진 꿈과 같이 됩니다.\\n깨어날 수만 있었다면.</value>
+      <value>시간이 얼마나 지났을까요?\\n\\N그들은 더이상 굳이 당신을 사냥하려 하지도 않습니다.\\n\\N시간은 흐르고, 흘러, 이전의 삶은 반쯤 잊혀진 꿈과 같이 됩니다.\\n\\N깨어날 수만 있다면.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>900</key>
@@ -14575,7 +14583,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>945</key>
-      <value>마스터\\n경보</value>
+      <value>마스터\\n\\N경보</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>946</key>
@@ -14583,7 +14591,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>947</key>
-      <value>경고:\\n긴급 시에만\\n사용</value>
+      <value>경고:\\n\\N긴급 시에만\\n\\N사용</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>948</key>
@@ -14655,7 +14663,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>965</key>
-      <value> 로그아웃했습니다.\\n계속하려면 다시 로그인 하세요.</value>
+      <value> 로그아웃했습니다.\\n\\N계속하려면 다시 로그인 하세요.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>966</key>
@@ -14667,7 +14675,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>968</key>
-      <value>정찰기 회수 불가; 대상이 너무 많음</value>
+      <value>정찰기 회수 불가;\\N대상이 너무 많음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>969</key>
@@ -14683,7 +14691,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>972</key>
-      <value>3 / 3 수리됨\\n훈련 시뮬레이션 완료</value>
+      <value>3 / 3 수리됨\\n\\N훈련 시뮬레이션 완료</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>973</key>
@@ -14750,6 +14758,26 @@ LOADING...???
       <value>즉시</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
+      <key>995</key>
+      <value>1440p/60fps</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>996</key>
+      <value>2160p/30fps</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>997</key>
+      <value>동적/60fps</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>998</key>
+      <value>1080p/60fps</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>999</key>
+      <value>1440p/30fps</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
       <key>1000</key>
       <value>프로필 만들기</value>
     </TranslationTableEntryUI>
@@ -14791,7 +14819,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1010</key>
-      <value>다음을 확인하세요. \\n- Outer Wilds에게 디스크 쓰기 권한 필요 \\n- 하드 드라이브 용량</value>
+      <value>다음을 확인하세요. \\n\\N- Outer Wilds에게 디스크 쓰기 권한 필요 \\n\\N- 하드 드라이브 용량</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1011</key>
@@ -15019,11 +15047,11 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1114</key>
-      <value>게임이 렌더링될 해상도를 결정합니다.\\n렌더링 비용: 높음</value>
+      <value>게임을 렌더링할 해상도를 결정합니다.\\n\\N렌더링 비용: 높음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1115</key>
-      <value>계단 모양의 픽셀 가장자리를 부드럽게 합니다. SMAA가 더 정확하고 품질이 높지만, FXAA가 더 빠릅니다.\\n렌더링 비용: 낮음</value>
+      <value>계단 모양의 픽셀 가장자리를 부드럽게 합니다. SMAA가 더 정확하고 품질이 높지만, FXAA가 더 빠릅니다.\\n\\N렌더링 비용: 낮음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1116</key>
@@ -15031,35 +15059,35 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1117</key>
-      <value>텍스처의 상대적 해상도를 결정합니다.\\n메모리 비용: 보통</value>
+      <value>텍스처의 상대적 해상도를 결정합니다.\\n\\N메모리 비용: 보통</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1118</key>
-      <value>바다의 파도의 물의 조명 품질을 결정합니다.\\n렌더링 비용: 높음</value>
+      <value>파도의 세부 묘사와 물의 조명 품질을 결정합니다.\\n\\N렌더링 비용: 높음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1119</key>
-      <value>게임 내 그림자의 해상도와 정확도, 그리고 그림자를 투사하는 조명의 수를 결정합니다.\\n렌더링 비용: 높음</value>
+      <value>게임 내 그림자의 해상도와 정확도, 그리고 그림자를 투사하는 조명의 수를 결정합니다.\\n\\N렌더링 비용: 높음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1120</key>
-      <value>AO(물체가 서로 가까이 있을때 생기는 부드러운 그림자)를 후처리 효과로 계산합니다.\\n렌더링 비용: 보통</value>
+      <value>AO(물체가 서로 가까이 있을때 생기는 부드러운 그림자)를 후처리 효과로 계산합니다.\\n\\N렌더링 비용: 보통</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1121</key>
-      <value>밝기 또는 어둡기를 조정합니다.\\n렌더링 비용: 없음</value>
+      <value>밝기 또는 어둡기를 조정합니다.\\n\\N렌더링 비용: 없음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1122</key>
-      <value>게임의 프레임 속도를 모니터 주사율과 동기화하여 화면 찢김 현상을 방지합니다.\\n렌더링 비용: 없음, 하지만 프레임 속도를 가장 가까운 모니터 주사율의 배수로 낮춤</value>
+      <value>게임의 프레임 속도를 모니터 주사율과 동기화하여 화면 찢김 현상을 방지합니다.\\n\\N렌더링 비용: 없음, 하지만 프레임 속도를 가장 가까운 모니터 주사율의 배수로 낮춤</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1123</key>
-      <value>디더링은 색상 혼합을 개선하지만, 게임의 압축된 비디오의 품질을 낮출 수 있습니다.\\n렌더링 비용: 없음</value>
+      <value>디더링은 색상 혼합을 개선하지만, 게임의 압축된 비디오의 품질을 낮출 수 있습니다.\\n\\N렌더링 비용: 없음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1124</key>
-      <value>게임 내 수직 시야각을 결정합니다. 경고: 이 설정을 변경하면 Outer Wilds의 특정 퍼즐에 영향을 줄 수 있습니다.\\n렌더링 비용: 낮음</value>
+      <value>게임 내 수직 시야각을 결정합니다. 경고: 이 설정을 변경하면 Outer Wilds의 특정 퍼즐에 영향을 줄 수 있습니다.\\n\\N렌더링 비용: 낮음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1125</key>
@@ -15103,15 +15131,15 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1135</key>
-      <value>번역된 텍스트를 읽는 동안 시간을 정지시킵니다(통역기는 정지 상태를 유지해야 합니다).\\n참고: 시간을 멈출 수 없을 때가 있습니다.</value>
+      <value>번역된 텍스트를 읽는 동안 시간을 정지시킵니다(통역기를 정지 상태로 유지해야 합니다).\\n\\N참고: 때에 따라 시간을 멈출 수 없을 때도 있습니다.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1136</key>
-      <value>우주선 일지를 사용하는 동안 시간을 정지시킵니다.\\n참고: 시간을 멈출 수 없을 때가 있습니다.</value>
+      <value>우주선 일지를 사용하는 동안 시간을 정지시킵니다.\\n\\N참고: 때에 따라 시간을 멈출 수 없을 때도 있습니다.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1137</key>
-      <value>캐릭터와 대화를 하거나 일지나 표지판을 읽는 동안 시간을 정지시킵니다. 이렇게 하면 대화 중 캐릭터 애니메이션이 재생되지 않습니다.\\n참고:시간을 멈출 수 없을 때가 있습니다.</value>
+      <value>캐릭터와 대화를 할 때나, 일지나 표지판을 읽는 동안 시간을 정지시킵니다. 이렇게 하면 대화 중 캐릭터 애니메이션이 재생되지 않습니다.\\n\\N참고: 때에 따라 시간을 멈출 수 없을 때도 있습니다.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1138</key>
@@ -15135,11 +15163,11 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1143</key>
-      <value>입력이 감지되기 전에 아날로그 스틱을 중심에서 어느 정도 기울여야 하는지 결정합니다.\\n아날로그 스틱을 건드리지 않았는데도 캐릭터가 움직이거나 주변을 둘러본다면 이 데드존 값을 늘리세요.</value>
+      <value>입력이 감지되기 전에 아날로그 스틱을 중심에서 어느 정도 기울여야 하는지 결정합니다.\\n\\N아날로그 스틱을 건드리지 않았는데도 캐릭터가 움직이거나 시야가 돌아간다면 이 데드존 값을 늘리세요.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1144</key>
-      <value>최대 입력이 더이상 감지되지 않을 때까지 아날로그 스틱을 끝에서 어느 정도 기울여야 하는지 결정합니다.\\n최대 속도로 움직이거나 주위를 둘러볼 수 없다면 이 데드존 값을 늘리세요.</value>
+      <value>최대 입력이 더이상 감지되지 않을 때까지 아날로그 스틱을 끝에서 어느 정도 기울여야 하는지 결정합니다.\\n\\N최대 속도로 이동하거나 시야를 돌릴 수 없다면 이 데드존 값을 늘리세요.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1145</key>
@@ -15239,7 +15267,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1173</key>
-      <value>정찰기: 전면 스냅샷 촬영\\n신호탐지기: 뷰 변경\\통역기: 변역</value>
+      <value>정찰기: 전면 스냅샷 촬영\\n\\N신호탐지기: 뷰 변경\\n\\N통역기: 변역</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1174</key>
@@ -15316,6 +15344,10 @@ LOADING...???
     <TranslationTableEntryUI>
       <key>1192</key>
       <value>최대 입력이 더 이상 감지되지 않을 때까지 왼쪽/오른쪽 스틱을 (최대 기울기로부터) 얼마나 놓아야 하는지 결정합니다. 최대 속도로 이동하거나 주위를 둘러볼 수 없는 경우, 이 데드 존을 늘려보십시오.</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1193</key>
+      <value>렌더링할 해상도와 주사율을 결정합니다.\\n\\N동적 해상도는 가변주사율(VRR)을 지원하는 디스플레이를 사용할 때 적합합니다.</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1200</key>
@@ -15419,7 +15451,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1251</key>
-      <value>오류:\\n지도 오프라인</value>
+      <value>오류:\\n\\N지도 오프라인</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1260</key>
@@ -15615,11 +15647,11 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1413</key>
-      <value>Echoes of the Eye의 공포스러운 부분은 의도된 경험의 일부입니다. 이러한 요소가 Outer Wilds를 즐기는 데 방해가 된다면, 이 옵션을 켜서 공포 요소를 줄일 수 있습니다.\\n계속 하시겠습니까?</value>
+      <value>Echoes of the Eye의 공포스러운 부분은 의도된 사항입니다. 이러한 요소가 Outer Wilds를 즐기는 데 방해가 된다면, 이 옵션을 켜서 공포 요소를 줄일 수 있습니다.\\n\\N계속 하시겠습니까?</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1414</key>
-      <value>Outer Wilds의 공포스러운 부분은 의도된 경험의 일부입니다. 이러한 요소가 게임을 즐기는 데 방해가 된다면, 이 옵션을 켜서 공포 요소를 줄일 수 있습니다.\\n계속 하시겠습니까?</value>
+      <value>Outer Wilds의 공포스러운 부분은 의도된 사항입니다. 이러한 요소가 게임을 즐기는 데 방해가 된다면, 이 옵션을 켜서 공포 요소를 줄일 수 있습니다.\\n\\N계속 하시겠습니까?</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1420</key>
@@ -15723,7 +15755,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1506</key>
-      <value>파도의 세부 묘사와 물의 조명 품질.\\n렌더링 비용: 높음</value>
+      <value>파도의 세부 묘사와 물의 조명 품질.\\n\\N렌더링 비용: 높음</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1507</key>
@@ -15731,7 +15763,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1508</key>
-      <value>게임 내 특정 위치에서의 거울상과 어두운 구역의 해상도.\\n렌더링 비용: 보통</value>
+      <value>게임 내 특정 위치에서의 거울상과 어두운 구역의 해상도.\\n\\N렌더링 비용: 보통</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1509</key>
@@ -15739,7 +15771,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1510</key>
-      <value>게임 내 특정 위치에서의 거울상의 해상도.\\n렌더링 비용: 보통</value>
+      <value>게임 내 특정 위치에서의 거울상의 해상도.\\N렌더링 비용: 보통</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1511</key>
@@ -15799,7 +15831,7 @@ LOADING...???
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1542</key>
-      <value>정찰기: 발사/전면 스냅샷\\n망원경: 확대\\n통역기: 번역</value>
+      <value>정찰기: 발사/전면 스냅샷\\n\\N신호탐지기: 확대\\n\\N통역기: 번역</value>
     </TranslationTableEntryUI>
     <TranslationTableEntryUI>
       <key>1543</key>
@@ -15884,6 +15916,50 @@ LOADING...???
     <TranslationTableEntryUI>
       <key>1570</key>
       <value>진동 기능</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>177</key>
+      <value>UI 크기</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1053</key>
+      <value>자동</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1054</key>
+      <value>보통</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1055</key>
+      <value>큼</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1194</key>
+      <value>자동: 크기가 언어와 플랫폼에 따라 자동으로 결정됩니다.\\n\\N보통/큼: 크기가 선택된 옵션으로 고정됩니다.</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1195</key>
+      <value>플레이어 시야 반전 (가로)</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1196</key>
+      <value>우주선 시야 반전 (가로)</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1197</key>
+      <value>플레이어 시야 반전 (세로)</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1198</key>
+      <value>우주선 시야 반전 (세로)</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1146</key>
+      <value>우주선을 조종 중이지 않을 때 시야 X축을 반전합니다.</value>
+    </TranslationTableEntryUI>
+    <TranslationTableEntryUI>
+      <key>1147</key>
+      <value>우주선을 조종 중일 때 시야 X축을 반전합니다.</value>
     </TranslationTableEntryUI>
   </table_ui>
 </TranslationTable_XML>

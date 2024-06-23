@@ -26,4 +26,4 @@ Copy-Item -Path "$AssetBundlePath/owkt","$AssetBundlePath/owkt.manifest" -Destin
 $ModPath = "$PSScriptRoot/mod/OWKT/bin/Release"
 Copy-Item -Path "$ModPath/default-config.json","$ModPath/manifest.json","$ModPath/OWKT.dll" -Destination "$PSScriptRoot/build/OWKT"
 
-Compress-Archive -Path "$PSScriptRoot/build/OWKT/*" -DestinationPath "$PSScriptRoot/build/OWKT.zip"
+Compress-Archive -Force -Path "$PSScriptRoot/build/OWKT/*" -DestinationPath "$PSScriptRoot/build/OWKT.zip"
