@@ -175,7 +175,7 @@ namespace OWKT
         }
 
         [HarmonyPrefix]
-        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation.GetFont))]
+        [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation.GetGameOverFont))]
         public static bool GetGameOverFont(ref Font __result)
         {
             if (TextTranslation.Get().GetLanguage() != TextTranslation.Language.KOREAN)
