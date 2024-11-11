@@ -2793,7 +2793,7 @@
   </entry>
   <entry>
     <key>ScientistAnswer23Oh, it’s a perfect ten. Unless you’re factoring in pilot error, in which case it’s about a four.\\nNo offense.</key>
-    <value />
+    <value>아, 10점 만점에 10점이야. 조종사 오류를 배제하면 말이지. 그것까지 고려하면 4점 정도 될걸.\\n기분 나쁘라 하는 말은 아냐.</value>
   </entry>
   <entry>
     <key>Scientist3Oh, hold up, you’re going to want to get the launch codes from the observatory first.</key>
